@@ -1,1 +1,15 @@
-
+{
+    "gran_premio_honor": {
+        "titulo": "Título de la obra ganadora",
+        "autor": "Nombre del Artista",
+        "localidad": "Ciudad, Provincia",
+        "reseña": "Breve descripción o reseña destacada sobre la obra galardonada con el Gran Premio de Honor.",
+        "id_archivo": "P01"
+    },
+    "premio_autor_local": {
+        "titulo": "Título de la obra local",
+        "autor": "Nombre del Artista Local",
+        "localidad": "Esquel, Chubut",
+        "id_archivo": "P02"
+    }
+}
