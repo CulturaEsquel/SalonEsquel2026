@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cargamos ambos JSON en paralelo
     Promise.all([
         fetch('data/premios-especiales.json').then(res => res.json()),
-        fetch('data/secciones.json').then(res => res.json())
+        fetch('data/selecciones.json').then(res => res.json())
     ])
     .then(([premiosData, seccionesData]) => {
         
