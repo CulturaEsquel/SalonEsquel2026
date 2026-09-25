@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Salón Municipal de Artes Plásticas</title>
+    
+    <!-- CSS de Lightbox2 para la ampliación de imágenes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    
+    <!-- Tus estilos CSS personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABECERA DEL SITIO -->
+    <header class="site-header">
+        <h1>Salón Municipal de Artes Plásticas</h1>
+        <p>Catálogo Oficial de la Muestra</p>
+    </header>
+
+    <main>
+        <!-- 1. INFORMACIÓN DEL JURADO (A mano directamente en el HTML) -->
+        <section id="seccion-jurado" class="seccion-bloque">
+            <h2>Integrantes del Jurado</h2>
+            <div class="lista-jurado">
+                <!-- Jurado 1 (Completa los datos donde están los puntos suspensivos) -->
+                <div class="jurado-card">
+                    <img src="img/jurado1.jpg" alt="Foto Jurado 1">
+                    <h3>Nombre del Jurado 1</h3>
+                    <p>...</p>
+                </div>
+                
+                <!-- Jurado 2 (Duplica este bloque si necesitas más jurados) -->
+                <div class="jurado-card">
+                    <img src="img/jurado2.jpg" alt="Foto Jurado 2">
+                    <h3>Nombre del Jurado 2</h3>
+                    <p>...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. GRAN PREMIO DE HONOR (Se llena con premios-especiales.json) -->
+        <section id="seccion-gran-premio" class="seccion-bloque">
+            <h2>Gran Premio de Honor</h2>
+            <div id="contenedor-premio-honor">
+                <!-- El JavaScript inyectará el contenido aquí -->
+            </div>
+        </section>
+
+        <!-- 3. PREMIO AUTOR LOCAL GRISELDA CEA (Se llena con premios-especiales.json) -->
+        <section id="seccion-autor-local" class="seccion-bloque">
+            <h2>Premio Autor Local Griselda Cea</h2>
+            <div id="contenedor-autor-local">
+                <!-- El JavaScript inyectará el contenido aquí -->
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN PINTURA (Se llena con secciones.json) -->
+        <section id="seccion-pintura" class="seccion-bloque">
+            <h2>Pintura</h2>
+            <div class="galeria" id="contenedor-pintura">
+                <!-- El JavaScript inyectará las obras aquí -->
+            </div>
+        </section>
+
+        <!-- 5. SECCIÓN DIBUJO (Se llena con secciones.json) -->
+        <section id="seccion-dibujo" class="seccion-bloque">
+            <h2>Dibujo</h2>
+            <div class="galeria" id="contenedor-dibujo">
+                <!-- El JavaScript inyectará las obras aquí -->
+            </div>
+        </section>
+
+        <!-- 6. SECCIÓN GRABADO Y ARTE IMPRESO (Se llena con secciones.json) -->
+        <section id="seccion-grabado" class="seccion-bloque">
+            <h2>Grabado y Arte Impreso</h2>
+            <div class="galeria" id="contenedor-grabado">
+                <!-- El JavaScript inyectará las obras aquí -->
+            </div>
+        </section>
+
+        <!-- 7. SECCIÓN ESCULTURA Y RELIEVE (Se llena con secciones.json) -->
+        <section id="seccion-escultura" class="seccion-bloque">
+            <h2>Escultura y Relieve</h2>
+            <div class="galeria" id="contenedor-escultura">
+                <!-- El JavaScript inyectará las obras aquí -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. PIE CON LOGOS INSTITUCIONALES Y AUSPATICIANTES -->
+    <footer class="site-footer">
+        <div class="logos-container">
+            <!-- Reemplaza o añade las imágenes de los logos institucionales -->
+            <img src="img/logo-municipio.png" alt="Logo Municipalidad">
+            <img src="img/logo-cultura.png" alt="Área de Cultura">
+            <!-- Agrega más auspiciantes aquí si lo deseas -->
+        </div>
+        <p>&copy; 2026 Salón Municipal de Artes Plásticas - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPTS NECESARIOS -->
+    <!-- jQuery (requerido por Lightbox2) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Script de Lightbox2 para ampliar imágenes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Tu script principal de lógica -->
+    <script src="js/main.js"></script>
+</body>
+</html>

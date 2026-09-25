@@ -1,0 +1,210 @@
+/* --- 1. RESET Y ESTILOS GENERALES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f5;
+}
+
+/* --- 2. CABECERA --- */
+.site-header {
+    background-color: #18181b;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.site-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.site-header p {
+    font-size: 1.1rem;
+    color: #a1a1aa;
+}
+
+/* --- 3. CONTENEDORES DE SECCIÓN --- */
+.seccion-bloque {
+    max-width: 1200px;
+    margin: 0 auto 3.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.seccion-bloque h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e4e4e7;
+    padding-bottom: 0.5rem;
+    color: #27272a;
+}
+
+/* --- 4. SECCIÓN JURADO --- */
+.lista-jurado {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.jurado-card {
+    background: white;
+    border: 1px solid #e4e4e7;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.jurado-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #f4f4f5;
+}
+
+.jurado-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #18181b;
+}
+
+.jurado-card p {
+    font-size: 0.95rem;
+    color: #52525b;
+}
+
+/* --- 5. PREMIOS ESPECIALES (Gran Premio y Autor Local) --- */
+.obra-destacada {
+    background: white;
+    border: 1px solid #e4e4e7;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.obra-destacada img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    background-color: #000;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.obra-destacada h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+    color: #18181b;
+}
+
+.obra-destacada p {
+    font-size: 1rem;
+    color: #52525b;
+    margin-bottom: 0.5rem;
+}
+
+/* --- 6. GALERÍAS DE OBRAS (Pintura, Dibujo, etc.) --- */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.obra-card {
+    background: white;
+    border: 1px solid #e4e4e7;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.obra-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.obra-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    background-color: #f4f4f5;
+}
+
+.obra-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+    color: #18181b;
+}
+
+.obra-card p {
+    font-size: 0.9rem;
+    color: #3f3f46;
+}
+
+.obra-card em {
+    color: #71717a;
+    font-size: 0.85rem;
+}
+
+/* --- 7. PIE DE PÁGINA (Footer) --- */
+.site-footer {
+    background-color: #18181b;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 5rem;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.logos-container img {
+    max-height: 65px;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.logos-container img:hover {
+    opacity: 1;
+}
+
+.site-footer p {
+    color: #a1a1aa;
+    font-size: 0.9rem;
+}
+
+/* --- 8. DISEÑO RESPONSIVO (Escritorio grande) --- */
+@media (min-width: 1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
