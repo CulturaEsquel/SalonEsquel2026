@@ -35,12 +35,12 @@ body {
 /* --- 3. CONTENEDORES DE SECCIÓN --- */
 .seccion-bloque {
     max-width: 1200px;
-    margin: 0 auto 3.5rem auto;
+    margin: 0 auto 4rem auto;
     padding: 0 1.5rem;
 }
 
-.seccion-bloque h2 {
-    font-size: 1.6rem;
+.seccion-bloque > h2 {
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
     border-bottom: 2px solid #e4e4e7;
     padding-bottom: 0.5rem;
@@ -51,14 +51,14 @@ body {
 .lista-jurado {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
+    gap: 24px;
 }
 
 .jurado-card {
     background: white;
     border: 1px solid #e4e4e7;
     border-radius: 8px;
-    padding: 20px;
+    padding: 24px;
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
@@ -88,7 +88,7 @@ body {
     background: white;
     border: 1px solid #e4e4e7;
     border-radius: 10px;
-    padding: 20px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,21 +120,24 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* --- 6. GALERÍAS DE OBRAS (Pintura, Dibujo, etc.) --- */
+/* --- 6. GALERÍAS DE OBRAS Y GRILLAS --- */
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
+    gap: 24px; /* Más espacio entre tarjetas para que no se vea apretado */
 }
 
 .obra-card {
     background: white;
     border: 1px solid #e4e4e7;
     border-radius: 8px;
-    padding: 12px;
+    padding: 16px; /* Mayor espacio interno */
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .obra-card:hover {
@@ -161,6 +164,7 @@ body {
 .obra-card p {
     font-size: 0.9rem;
     color: #3f3f46;
+    margin-bottom: 0.2rem;
 }
 
 .obra-card em {
@@ -168,37 +172,38 @@ body {
     font-size: 0.85rem;
 }
 
-/* Títulos internos para separar visualmente */
+/* Títulos internos para separar premios y seleccionadas */
 .subseccion-titulo {
-    grid-column: 1 / -1;
-    margin: 2rem 0 1rem 0;
+    width: 100%;
+    margin: 2.5rem 0 1rem 0;
 }
 
 .subseccion-titulo h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: #18181b;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-left: 4px solid #d97706; /* Color destacado */
-    padding-left: 10px;
+    border-left: 4px solid #d97706;
+    padding-left: 12px;
 }
 
-/* Estilo diferencial para las tarjetas de la sección de premios */
+/* Estilo diferencial para las tarjetas de premios */
 .premio-card {
-    border: 2px solid #f59e0b; /* Borde dorado/ámbar */
-    background: #fffbeb;      /* Fondo sutilmente cálido */
+    border: 2px solid #f59e0b;
+    background: #fffbeb;
 }
 
 .badge-premio {
     background: #d97706;
     color: white;
-    padding: 3px 10px;
+    padding: 4px 12px;
     border-radius: 12px;
     font-size: 0.75rem;
     font-weight: bold;
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 /* --- 7. PIE DE PÁGINA (Footer) --- */
@@ -214,13 +219,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
 .logos-container img {
-    max-height: 65px;
+    max-height: 55px;
     object-fit: contain;
     opacity: 0.85;
     transition: opacity 0.2s;
