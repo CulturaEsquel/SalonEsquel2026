@@ -62,8 +62,7 @@ function renderizarSeccion(nombreId, dataSeccion) {
             const urlImagen = `img/${obra.id_archivo}.jpg`;
             htmlContenido += `
                 <div class="obra-card premio-card">
-                    <span class="badge-premio">Premiado / Mención</span>
-                    <a href="${urlImagen}" data-lightbox="${nombreId}-premios" data-title="${obra.titulo} - ${obra.autor} (${obra.tipo_premio || 'Premio'})">
+                   <a href="${urlImagen}" data-lightbox="${nombreId}-premios" data-title="${obra.titulo} - ${obra.autor} (${obra.tipo_premio || 'Premio'})">
                         <img src="${urlImagen}" alt="${obra.titulo}" loading="lazy">
                     </a>
                     ${obra.tipo_premio ? `<span class="badge-premio">${obra.tipo_premio}</span>` : ''}
