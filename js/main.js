@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cargamos ambos JSON en paralelo
     Promise.all([
         fetch('premios-especiales.json').then(res => res.json()),
-        fetch('secciones.json').then(res => res.json())
+        fetch('selecciones.json').then(res => res.json())
     ])
     .then(([premiosData, seccionesData]) => {
         
@@ -63,9 +63,10 @@ function renderizarSeccion(nombreId, dataSeccion) {
             htmlContenido += `
                 <div class="obra-card premio-card">
                     <span class="badge-premio">Premiado / Mención</span>
-                    <a href="${urlImagen}" data-lightbox="${nombreId}-premios" data-title="${obra.titulo} - ${obra.autor}">
+                    <a href="${urlImagen}" data-lightbox="${nombreId}-premios" data-title="${obra.titulo} - ${obra.autor} (${obra.tipo_premio || 'Premio'})">
                         <img src="${urlImagen}" alt="${obra.titulo}" loading="lazy">
                     </a>
+                    ${obra.tipo_premio ? `<span class="badge-premio">${obra.tipo_premio}</span>` : ''}
                     <h3>${obra.titulo}</h3>
                     <p><strong>Autor:</strong> ${obra.autor}</p>
                     <p><em>${obra.localidad}</em></p>
