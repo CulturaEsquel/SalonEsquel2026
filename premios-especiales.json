@@ -1,15 +1,15 @@
 {
     "gran_premio_honor": {
-        "titulo": "Título de la obra ganadora",
-        "autor": "Nombre del Artista",
-        "localidad": "Ciudad, Provincia",
+        "titulo": "La evidencia de haber estado",
+        "autor": "Marcela Verónica Vito",
+        "localidad": "Puerto Madryn, Chubut",
         "reseña": "Breve descripción o reseña destacada sobre la obra galardonada con el Gran Premio de Honor.",
-        "id_archivo": "P01"
+        "id_archivo": "D19"
     },
     "premio_autor_local": {
-        "titulo": "Título de la obra local",
-        "autor": "Nombre del Artista Local",
+        "titulo": "Mundo II",
+        "autor": "María Marta Massacese Miguel",
         "localidad": "Esquel, Chubut",
-        "id_archivo": "P02"
+        "id_archivo": "P30"
     }
 }

@@ -168,6 +168,39 @@ body {
     font-size: 0.85rem;
 }
 
+/* Títulos internos para separar visualmente */
+.subseccion-titulo {
+    grid-column: 1 / -1;
+    margin: 2rem 0 1rem 0;
+}
+
+.subseccion-titulo h3 {
+    font-size: 1.25rem;
+    color: #18181b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-left: 4px solid #d97706; /* Color destacado */
+    padding-left: 10px;
+}
+
+/* Estilo diferencial para las tarjetas de la sección de premios */
+.premio-card {
+    border: 2px solid #f59e0b; /* Borde dorado/ámbar */
+    background: #fffbeb;      /* Fondo sutilmente cálido */
+}
+
+.badge-premio {
+    background: #d97706;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
 /* --- 7. PIE DE PÁGINA (Footer) --- */
 .site-footer {
     background-color: #18181b;

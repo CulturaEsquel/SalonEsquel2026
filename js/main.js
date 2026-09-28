@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cargamos ambos JSON en paralelo
     Promise.all([
         fetch('premios-especiales.json').then(res => res.json()),
-        fetch('selecciones.json').then(res => res.json())
+        fetch('secciones.json').then(res => res.json())
     ])
     .then(([premiosData, seccionesData]) => {
         
@@ -51,21 +51,50 @@ function renderizarSeccion(nombreId, dataSeccion) {
     const contenedor = document.getElementById(`contenedor-${nombreId}`);
     if (!contenedor || !dataSeccion) return;
 
-    // Unimos los premios y las obras seleccionadas de esa sección en un solo listado
-    const todasLasObras = [...(dataSeccion.premios || []), ...(dataSeccion.seleccionadas || [])];
+    let htmlContenido = '';
 
-    todasLasObras.forEach(obra => {
-        const urlImagen = `img/${obra.id_archivo}.jpg`;
+    // 1. Renderizar Premios (con un diseño destacado)
+    if (dataSeccion.premios && dataSeccion.premios.length > 0) {
+        htmlContenido += `<div class="subseccion-titulo"><h3>Premios y Menciones</h3></div>`;
+        htmlContenido += `<div class="galeria galeria-premios">`;
         
-        contenedor.innerHTML += `
-            <div class="obra-card">
-                <a href="${urlImagen}" data-lightbox="${nombreId}" data-title="${obra.titulo} - ${obra.autor}">
-                    <img src="${urlImagen}" alt="${obra.titulo}" loading="lazy">
-                </a>
-                <h3>${obra.titulo}</h3>
-                <p><strong>Autor:</strong> ${obra.autor}</p>
-                <p><em>${obra.localidad}</em></p>
-            </div>
-        `;
-    });
+        dataSeccion.premios.forEach(obra => {
+            const urlImagen = `img/${obra.id_archivo}.jpg`;
+            htmlContenido += `
+                <div class="obra-card premio-card">
+                    <span class="badge-premio">Premiado / Mención</span>
+                    <a href="${urlImagen}" data-lightbox="${nombreId}-premios" data-title="${obra.titulo} - ${obra.autor}">
+                        <img src="${urlImagen}" alt="${obra.titulo}" loading="lazy">
+                    </a>
+                    <h3>${obra.titulo}</h3>
+                    <p><strong>Autor:</strong> ${obra.autor}</p>
+                    <p><em>${obra.localidad}</em></p>
+                </div>
+            `;
+        });
+        htmlContenido += `</div>`;
+    }
+
+    // 2. Renderizar Obras Seleccionadas (con el diseño normal de grilla)
+    if (dataSeccion.seleccionadas && dataSeccion.seleccionadas.length > 0) {
+        htmlContenido += `<div class="subseccion-titulo"><h3>Obras Seleccionadas</h3></div>`;
+        htmlContenido += `<div class="galeria">`;
+        
+        dataSeccion.seleccionadas.forEach(obra => {
+            const urlImagen = `img/${obra.id_archivo}.jpg`;
+            htmlContenido += `
+                <div class="obra-card">
+                    <a href="${urlImagen}" data-lightbox="${nombreId}-seleccionadas" data-title="${obra.titulo} - ${obra.autor}">
+                        <img src="${urlImagen}" alt="${obra.titulo}" loading="lazy">
+                    </a>
+                    <h3>${obra.titulo}</h3>
+                    <p><strong>Autor:</strong> ${obra.autor}</p>
+                    <p><em>${obra.localidad}</em></p>
+                </div>
+            `;
+        });
+        htmlContenido += `</div>`;
+    }
+
+    contenedor.innerHTML = htmlContenido;
 }
