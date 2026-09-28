@@ -6,35 +6,35 @@
                     "autor": "Dalina Degirmenci",
                     "titulo": "De cuando nos dejaron solos",
                     "localidad": "Trevelin, Chubut",
-                    "id_archivo": "P23"
+                    "id_archivo": "P23",
 					"tipo_premio": "1º Premio"
                 },
                 {
                     "autor": "Mauro Riesco",
                     "titulo": "Fuego",
                     "localidad": "Esquel, Chubut",
-                    "id_archivo": "P07"
+                    "id_archivo": "P07",
 					"tipo_premio": "2º Premio"
                 },
                 {
                     "autor": "Ivana Del Blanco",
                     "titulo": "4 Vientos",
                     "localidad": "Esquel, Chubut",
-                    "id_archivo": "P27"
+                    "id_archivo": "P27",
 					"tipo_premio": "Mención Honorífica"
                 },
                 {
                     "autor": "María Carla Romero",
                     "titulo": "El gesto en las retamas",
                     "localidad": "El Bolsón, Río Negro",
-                    "id_archivo": "P16"
+                    "id_archivo": "P16",
 					"tipo_premio": "Mención"
                 },
                 {
                     "autor": "José Alberto Pinuer",
                     "titulo": "Suburbio",
                     "localidad": "Plotier, Neuquén",
-                    "id_archivo": "P50"
+                    "id_archivo": "P50",
 					"tipo_premio": "Mención"
                 }
             ],
@@ -137,21 +137,21 @@
                     "autor": "María Victoria Illanes",
                     "titulo": "Antigua casa abandonada, Trevelin",
                     "localidad": "Trevelin, Chubut",
-                    "id_archivo": "D01"
+                    "id_archivo": "D01",
 					"tipo_premio": "1º Premio"
                 },
                 {
                     "autor": "María Victória Palmeri",
                     "titulo": "Existir es Resistir",
                     "localidad": "Los Cipreses, Chubut",
-                    "id_archivo": "D08"
+                    "id_archivo": "D08",
 					"tipo_premio": "2º Premio"
                 },
                 {
                     "autor": "Edgardo Pedemonti",
                     "titulo": "Entre grietas y silencio",
                     "localidad": "Esquel, Chubut",
-                    "id_archivo": "D06"
+                    "id_archivo": "D06",
 					"tipo_premio": "Mención"
                 }
             ],
@@ -206,21 +206,21 @@
                     "autor": "Claudio Dalcó",
                     "titulo": "Atrapados por pantallas e íconos Serie: Enredados",
                     "localidad": "Esquel, Chubut",
-                    "id_archivo": "G04"
+                    "id_archivo": "G04",
 					"tipo_premio": "1º Premio"
                 },
                 {
                     "autor": "Pablo Modugno",
                     "titulo": "¿Cuándo? ¿Dónde? ¿Por qué?",
                     "localidad": "Trevelin, Chubut",
-                    "id_archivo": "G01"
+                    "id_archivo": "G01",
 					"tipo_premio": "2º Premio"
                 },
                 {
                     "autor": "Guillermo Chort",
                     "titulo": "El peor pecado es la ausencia",
                     "localidad": "Esquel, Chubut",
-                    "id_archivo": "G06"
+                    "id_archivo": "G06",
 					"tipo_premio": "Mensión"
                 }
             ],
@@ -245,14 +245,14 @@
                     "autor": "Agustín Miguel Nicolás",
                     "titulo": "Confronto con la rotura, autorretrato",
                     "localidad": "Esquel, Chubut",
-                    "id_archivo": "E22"
+                    "id_archivo": "E22",
 					"tipo_premio": "1º Premio"
                 },
                 {
                     "autor": "Karina Gabriela Albornoz",
                     "titulo": "Latencia",
                     "localidad": "Esquel, Chubut",
-                    "id_archivo": "E19"
+                    "id_archivo": "E19",
 					"tipo_premio": "2º premio"
                 }
             ],
