@@ -30,8 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="img/${pal.id_archivo}.jpg" data-lightbox="local" data-title="${pal.titulo} - ${pal.autor}">
                         <img src="img/${pal.id_archivo}.jpg" alt="${pal.titulo}">
                     </a>
+                    <div>
                     <h3>${pal.titulo}</h3>
                     <p><strong>Autor:</strong> ${pal.autor} (${pal.localidad})</p>
+                    </div>
                 </div>
             `;
         }
