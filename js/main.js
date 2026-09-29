@@ -60,7 +60,7 @@ function renderizarSeccion(nombreId, dataSeccion) {
     // 1. Renderizar Premios (con un diseño destacado)
     if (dataSeccion.premios && dataSeccion.premios.length > 0) {
         htmlContenido += `<div class="subseccion-titulo"><h3>Premios y Menciones</h3></div>`;
-        htmlContenido += `<div class="galeria galeria-premios">`;
+        htmlContenido += `<div class="galeria-premios">`;
         
         dataSeccion.premios.forEach(obra => {
             const urlImagen = `img/${obra.id_archivo}.jpg`;
