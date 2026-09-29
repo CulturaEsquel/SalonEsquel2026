@@ -65,7 +65,7 @@ body {
 
 .jurado-foto-principal img {
     width: 100%;
-    max-height: 400px;
+    max-height:600px;
     object-fit: cover;
     object-position: 50% 90%;
     border-radius: 8px;
