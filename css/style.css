@@ -84,9 +84,6 @@ body {
 }
 
 /* --- 5. PREMIOS ESPECIALES (Gran Premio y Autor Local) --- */
-.obra-destacada (max-width: 825px) {
-    text-align: Center;
-}
 
 .obra-destacada {
     background: linear-gradient(144deg, #ead5f1, transparent);
@@ -249,5 +246,10 @@ body {
 @media (min-width: 1024px) {
     .galeria {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 825px) {
+    .obra-destacada {
+    text-align: Center;
     }
 }
