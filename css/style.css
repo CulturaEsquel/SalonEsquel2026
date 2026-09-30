@@ -227,7 +227,6 @@ body {
 /* --- 7. PIE DE PÁGINA (Footer) --- */
 .site-footer {
     background-color: #ffffff;
-    color: white;
     text-align: center;
     padding: 3rem 1rem;
     margin-top: 5rem;
@@ -245,7 +244,7 @@ body {
 .logos-container img {
     max-height: 55px;
     object-fit: contain;
-    opacity: 0.85;
+    opacity: 0.9;
     transition: opacity 0.2s;
 }
 
