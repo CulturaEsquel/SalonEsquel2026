@@ -14,10 +14,10 @@ body {
 
 /* --- 2. CABECERA --- */
 .site-header {
-    background-color: #18181b;
+    /* background-color: #18181b; */
     color: white;
     text-align: center;
-    padding: 3rem 1rem;
+    /* padding: 3rem 1rem; */
     margin-bottom: 2.5rem;
 }
 
@@ -30,6 +30,12 @@ body {
 .site-header p {
     font-size: 1.1rem;
     color: #a1a1aa;
+}
+.site-header img{
+    width: 100%;
+    max-height:720px;
+    object-fit: cover;
+    object-position: 50% 100%;
 }
 
 /* --- 3. CONTENEDORES DE SECCIÓN --- */
@@ -59,7 +65,6 @@ body {
     border: 1px solid #e4e4e7;
     border-radius: 8px;
     padding: 24px;
-    text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
